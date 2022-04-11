@@ -4,4 +4,9 @@ describe('Soma de dois numero', () => {
         const resultado = somar(1, 1)
         expect(resultado).toEqual(2)
     })
+
+    it('Somar 1 + "teste" e retornar 2', () => {
+        const resultado = somar(1, '1')
+        expect(resultado).toEqual(2)
+    })
 })
